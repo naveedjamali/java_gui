@@ -86,7 +86,6 @@ public class Demo {
         panel.add(addManPowerBtn);
         panel.add(displayExpensesBtn);
         panel.add(exitBtn);
-
         frame.add(panel);
         frame.setSize(200, 300);
         frame.setLocationRelativeTo(null);
@@ -94,7 +93,6 @@ public class Demo {
         frame.setVisible(true);
 
     }
-
 
     public static String[] getNames(Class<? extends Enum<?>> e) {
         return Arrays.toString(e.getEnumConstants()).replaceAll("^.|.$", "").split(", ");
