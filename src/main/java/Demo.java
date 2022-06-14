@@ -41,6 +41,10 @@ public class Demo {
         JButton exitBtn = new JButton("Exit");
 
         addSupplierBtn.addActionListener(actionEvent -> {
+
+            /**
+             * Add Supplier button click function.
+             */
             JFrame dialogFrame = new JFrame();
             dialogFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             dialogFrame.setVisible(true);
@@ -48,9 +52,17 @@ public class Demo {
             JOptionPane.showMessageDialog(dialogFrame, list);
             System.out.println(list.getSelectedValue());
             dialogFrame.pack();
+
+            /**
+             * Add Supplier button click function ends here.
+             */
         });
 
         addManPowerBtn.addActionListener(actionEvent -> {
+
+            /**
+             * Add Manpower button click function.
+             */
             String name = JOptionPane.showInputDialog("Enter name");
             String id = JOptionPane.showInputDialog("Enter ID");
             String designation = JOptionPane.showInputDialog("Enter Designation");
@@ -63,9 +75,18 @@ public class Demo {
             }
             Contractor contractor = new Contractor(name, id, designation, Double.parseDouble(hourlyPay), weeklyWorkedHour, Double.parseDouble(overTime));
             contractors.add(contractor);
+
+
+            /**
+             * Add Manpower button click function ends here.
+             */
         });
 
         displayExpensesBtn.addActionListener(actionEvent -> {
+
+            /**
+             * Display Expenses button click function.
+             */
             String contractorsInfo = "";
             for (Employee c : contractors
             ) {
@@ -73,13 +94,24 @@ public class Demo {
             }
 
             JOptionPane.showMessageDialog(null, contractorsInfo);
+
+            /**
+             * Display Expenses button click function ends here.
+             */
         });
 
         exitBtn.addActionListener(actionEvent -> {
+            /**
+             * Exit button click function.
+             */
             int result = JOptionPane.showConfirmDialog(null, "Want to close the program", "Close Program", JOptionPane.YES_NO_OPTION);
             if (result == JOptionPane.YES_OPTION) {
                 System.exit(0);
             }
+
+            /**
+             * Exit button click function ends here.
+             */
         });
 
         panel.add(addSupplierBtn);
