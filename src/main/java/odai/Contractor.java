@@ -5,7 +5,7 @@ import odai.Employee;
 
 public class Contractor extends Employee {
 
-    double hourlyRate; // the regular hourly rate of the part time employee 
+    double hourlyRate; // the regular hourly rate of the part-time employee
 
     int weeklyHours[] = new int[7]; // the number of hours worked by the employee weekly 
 
@@ -108,17 +108,7 @@ public class Contractor extends Employee {
     int weeklyTotalHoursWorked() {
 
         int numberOfHours = 0;
-        /*
 
-         * A class Contractor which extends Employee class
-
-         */
-
-
-//Suppler enum
-
-
-        // Repetition statements
 
         for (int i = 0; i < weeklyHours.length; i++) {
 

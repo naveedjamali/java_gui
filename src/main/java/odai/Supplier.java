@@ -1,12 +1,8 @@
 package odai;
 
 public class Supplier {
-
-
     public Nameofsuppliers nameofsuppliers;
     public int weekly_pay;
-
-
     public Supplier(double weekly_pay, Nameofsuppliers nameofsuppliers) {
 
 
